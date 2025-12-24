@@ -1,0 +1,33 @@
+.search_box {
+  margin-left: -20px;
+}
+
+.search_form {
+  background-color: rgb(240, 243, 245);
+}
+
+/*============== MEDIA QUERY  ===============*/
+
+@media (max-width: 576px) {
+  
+  .category_hidden {
+    display: none;
+  }
+
+  .search_box {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .logo_position {
+        justify-content: center;
+  }
+
+  .pages_sm_top_bottom_space {
+    margin: 15px 0;
+  }
+
+  
+}
