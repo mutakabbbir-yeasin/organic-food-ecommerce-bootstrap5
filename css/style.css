@@ -10,7 +10,6 @@
   background-color: rgb(240, 243, 245);
 }
 
-
 /* BANNER SECTION */
 
 .banner {
@@ -19,21 +18,24 @@
   position: relative;
 }
 
-.banner_heading_text{
+.banner_heading_text {
   font-size: 70px;
 }
 
 .banner_text_parent {
   top: 10%;
-  left: 3%;
-  width: 60%;
+  margin-left: 20px;
+}
+
+.banner_text_width {
+width: 60%;
 }
 
 .bnr_btn_strat,
 .bnr_btn_join {
   padding: 20px 40px;
   border-radius: 30px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .bnr_btn_strat:hover {
@@ -52,12 +54,30 @@
   z-index: 1;
 }
 
+.third_card {
+  background-color: orange;
+}
+
+.card_width {
+  height: 100%;
+}
+
+.card_section {
+  margin-top: 75px;
+}
+
 /*============== MEDIA QUERY  ===============*/
 
-
+@media (max-width: 575px) {
+  .bnr_btn_strat,
+  .bnr_btn_join {
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+}
 
 @media (max-width: 767px) {
-  
   .category_hidden {
     display: none;
   }
@@ -88,7 +108,4 @@
   .bnt_count_text_digit {
     font-size: 25px;
   }
-
-  
-
 }
