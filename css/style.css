@@ -67,8 +67,7 @@
   height: 100%;
 }
 
-<<<<<<< HEAD
-=======
+
 .view_btn_hover {
   transition: .3s ease;
 }
@@ -113,7 +112,24 @@
   visibility: visible;
 }
 
->>>>>>> 89f8355 (best product card done)
+.offer_text {
+  top: 25%;
+  left: 5%;
+}
+
+.swiper-prev1.disabled,
+.swiper-next1.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.swiper-prev.disabled,
+.swiper-next.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+
 /*============== MEDIA QUERY  ===============*/
 
 @media (max-width: 575px) {

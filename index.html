@@ -1,109 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Organic Food</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Organic Food</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <!-- bootstrap icons cdn -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <!-- NAVBAR SECTION  -->
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <!-- logo & hambarger icon -->
-        <div class="col-md-3 col-12">
-          <div class="d-flex align-items-center justify-content-md-center logo_position">
-            <a class="navbar-brand" href="#">
-              <img src="images/logo.svg" alt="Logo" width="160" height="80" class="d-inline-block align-text-top" />
-            </a>
-            <a href="#"><i class="bi bi-list ps-2 fs-2 text-dark"></i></a>
+  <body>
+    <!-- NAVBAR SECTION  -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <!-- logo & hambarger icon -->
+          <div class="col-md-3 col-12">
+            <div
+              class="d-flex align-items-center justify-content-md-center logo_position"
+            >
+              <a class="navbar-brand" href="#">
+                <img
+                  src="images/logo.svg"
+                  alt="Logo"
+                  width="160"
+                  height="80"
+                  class="d-inline-block align-text-top"
+                />
+              </a>
+              <a href="#"><i class="bi bi-list ps-2 fs-2 text-dark"></i></a>
+            </div>
           </div>
-        </div>
-        <!-- search box -->
-        <div class="col-md-4 col-12">
-          <div class="position-relative search_box">
-            <form class="d-flex form-control search_form" role="search bg-light">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown category_hidden">
-                  <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    All Categories
+          <!-- search box -->
+          <div class="col-md-4 col-12">
+            <div class="position-relative search_box">
+              <form
+                class="d-flex form-control search_form"
+                role="search bg-light"
+              >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown category_hidden">
+                    <a
+                      class="nav-link dropdown-toggle text-dark"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      All Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Groceries</a></li>
+                      <li><a class="dropdown-item" href="#">Drinks</a></li>
+                      <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <input
+                  class="form-control me-2 border-0 bg-transparent search_input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a href="#"
+                  ><i
+                    class="bi bi-search fs-4 position-absolute top-2 end-0 me-3 text-dark"
+                  ></i
+                ></a>
+              </form>
+            </div>
+          </div>
+
+          <!-- pages -->
+          <div class="col-md-3 col-12">
+            <div class="pages_sm_top_bottom_space">
+              <ul
+                class="mx-auto mb-2 mb-lg-0 ms-lg-5 d-flex justify-content-center"
+              >
+                <li class="nav-item d-inline me-4">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="index.html"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item dropdown d-inline">
+                  <a
+                    class="nav-link dropdown-toggle fw-bold text-dark"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PAGES
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Groceries</a></li>
-                    <li><a class="dropdown-item" href="#">Drinks</a></li>
-                    <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                    <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+                    <li><a class="dropdown-item" href="#">SHOP</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">SINGLE PRODUCT</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">CART</a></li>
+                    <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
+                    <li><a class="dropdown-item" href="#">BLOG</a></li>
+                    <li><a class="dropdown-item" href="#">SINGLE POST</a></li>
+                    <li><a class="dropdown-item" href="#">STYLES</a></li>
+                    <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                    <li><a class="dropdown-item" href="#">THANK YOU</a></li>
+                    <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
+                    <li><a class="dropdown-item" href="#">404 PAGE</a></li>
                   </ul>
                 </li>
               </ul>
-              <input class="form-control me-2 border-0 bg-transparent search_input" type="search" placeholder="Search"
-                aria-label="Search" />
-              <a href="#"><i class="bi bi-search fs-4 position-absolute top-2 end-0 me-3 text-dark"></i></a>
-            </form>
+            </div>
           </div>
-        </div>
 
-        <!-- pages -->
-        <div class="col-md-3 col-12">
-          <div class="pages_sm_top_bottom_space">
-            <ul class="mx-auto mb-2 mb-lg-0 ms-lg-5 d-flex justify-content-center">
-              <li class="nav-item d-inline me-4">
-                <a class="nav-link active fw-bold" aria-current="page" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item dropdown d-inline">
-                <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  PAGES
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">ABOUT US</a></li>
-                  <li><a class="dropdown-item" href="#">SHOP</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">SINGLE PRODUCT</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">CART</a></li>
-                  <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
-                  <li><a class="dropdown-item" href="#">BLOG</a></li>
-                  <li><a class="dropdown-item" href="#">SINGLE POST</a></li>
-                  <li><a class="dropdown-item" href="#">STYLES</a></li>
-                  <li><a class="dropdown-item" href="#">CONTACT</a></li>
-                  <li><a class="dropdown-item" href="#">THANK YOU</a></li>
-                  <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
-                  <li><a class="dropdown-item" href="#">404 PAGE</a></li>
-                </ul>
-              </li>
-            </ul>
+          <!-- icons -->
+          <div class="col-md-2 col-12">
+            <div
+              class="d-flex justify-content-center justify-content-sm-center"
+            >
+              <a href="#"><i class="bi bi-person fs-4 me-4 text-dark"></i></a>
+              <a href="#"
+                ><i class="bi bi-bookmark-check fs-4 me-4 text-dark"></i
+              ></a>
+              <a href="#"><i class="bi bi-basket fs-4 text-dark"></i></a>
+            </div>
           </div>
-        </div>
-
-        <!-- icons -->
-        <div class="col-md-2 col-12">
-          <div class="d-flex justify-content-center justify-content-sm-center">
-            <a href="#"><i class="bi bi-person fs-4 me-4 text-dark"></i></a>
-            <a href="#"><i class="bi bi-bookmark-check fs-4 me-4 text-dark"></i></a>
-            <a href="#"><i class="bi bi-basket fs-4 text-dark"></i></a>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
-  </div>
 
-  <!-- BANNER SECTION -->
-  <section class="container-fluid p-0  position-relative">
-    <div class="banner_text_parent mb-5">
-      <div class="banner_text_width">
-        <p class="banner_heading_text">
-          <span class="text-success fw-bold">Organic</span> Foods at your
-          <span class="fw-bold">Doorsteps</span>
-        </p>
-=======
     <!-- BANNER SECTION -->
     <section class="container-fluid p-0 position-relative">
       <div class="banner_text_parent mb-5">
@@ -112,94 +153,9 @@
             <span class="text-success fw-bold">Organic</span> Foods at your
             <span class="fw-bold">Doorsteps</span>
           </p>
->>>>>>> 89f8355 (best product card done)
 
-        <p class="text-muted fs-3">Dignissim massa diam elementum.</p>
+          <p class="text-muted fs-3">Dignissim massa diam elementum.</p>
 
-<<<<<<< HEAD
-        <div>
-          <button class="bg-success text-light border-0 bnr_btn_strat me-3 mb-3">
-            START SHOPPING
-          </button>
-
-          <button class="bg-dark text-light border-0 position-relative bnr_btn_join mb-3">
-            JOIN NOW
-          </button>
-        </div>
-
-        <!-- counts -->
-        <div class="row pt-4">
-          <div class="col">
-            <div class="row text-dark align-items-center">
-              <div class="col-auto">
-                <p class="count_title fw-bold mb-0">14k+</p>
-              </div>
-              <div class="col">
-                <p class="count_text text-uppercase mb-0">
-                  Product <br />
-                  Varieties
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="row text-dark align-items-center">
-              <div class="col-auto">
-                <p class="count_title fw-bold mb-0">50k+</p>
-              </div>
-              <div class="col">
-                <p class="count_text text-uppercase mb-0">
-                  Happy <br />
-                  Customers
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="row text-dark align-items-center">
-              <div class="col-auto">
-                <p class="count_title fw-bold mb-0">50k+</p>
-              </div>
-              <div class="col">
-                <p class="count_text text-uppercase mb-0">
-                  Happy <br />
-                  Customers
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col">
-            <div class="row text-dark align-items-center">
-              <div class="col-auto">
-                <p class="count_title fw-bold mb-0">10+</p>
-              </div>
-              <div class="col">
-                <p class="count_text text-uppercase mb-0">
-                  Store <br />
-                  Locations
-                </p>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-      <!-- adding cards  -->
-      <div class="container mt-5">
-        <div class="row g-0 d-flex">
-          <div class="col-md-4 col-sm-12">
-            <div class="card bg-success border-0 rounded-0">
-              <div class="row g-0">
-                <div class="col-3">
-                  <img src="images/img1-rem.png" class="img-fluid mt-4 ms-3" alt="img" />
-                </div>
-                <div class="col-9">
-                  <div class="card-body text-light lh-base">
-                    <h4 class="card-title px-2">Fresh from farm</h4>
-                    <p class="card-text fs-6 p-2">
-                      Lorem ipsum dolor sit amet, consectetur adipi elit.
-                    </p>
-                  </div>
-=======
           <div>
             <button
               class="bg-success text-light border-0 bnr_btn_strat me-3 mb-3"
@@ -252,26 +208,10 @@
                     Happy <br />
                     Customers
                   </p>
->>>>>>> 89f8355 (best product card done)
                 </div>
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-
-          <div class="col-md-4 col-12">
-            <div class="card bg-dark border-0 rounded-0">
-              <div class="row g-0">
-                <div class="col-3">
-                  <img src="images/img2-rem.png" class="img-fluid mt-4 ms-3" alt="img" />
-                </div>
-                <div class="col-9">
-                  <div class="card-body text-light lh-base">
-                    <h4 class="card-title px-2">100% Organic</h4>
-                    <p class="card-text fs-6 p-2">
-                      Lorem ipsum dolor sit amet, consectetur adipi elit.
-                    </p>
-=======
         </div>
         <!-- adding cards  -->
         <div class="container mt-5">
@@ -293,25 +233,50 @@
                         Lorem ipsum dolor sit amet, consectetur adipi elit.
                       </p>
                     </div>
->>>>>>> 89f8355 (best product card done)
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-4 col-12">
-            <div class="card third_card border-0 rounded-0">
-              <div class="row g-0">
-                <div class="col-3">
-                  <img src="images/img3-rem.png" class="img-fluid mt-4 ms-3" alt="img" />
+            <div class="col-md-4 col-12">
+              <div class="card bg-dark border-0 rounded-0">
+                <div class="row g-0">
+                  <div class="col-3">
+                    <img
+                      src="images/img2-rem.png"
+                      class="img-fluid mt-4 ms-3"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="col-9">
+                    <div class="card-body text-light lh-base">
+                      <h4 class="card-title px-2">100% Organic</h4>
+                      <p class="card-text fs-6 p-2">
+                        Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-9">
-                  <div class="card-body text-light lh-base">
-                    <h4 class="card-title px-2">Free Delivery</h4>
-                    <p class="card-text fs-6 p-2">
-                      Lorem ipsum dolor sit amet, consectetur adipi elit.
-                    </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+              <div class="card third_card border-0 rounded-0">
+                <div class="row g-0">
+                  <div class="col-3">
+                    <img
+                      src="images/img3-rem.png"
+                      class="img-fluid mt-4 ms-3"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="col-9">
+                    <div class="card-body text-light lh-base">
+                      <h4 class="card-title px-2">Free Delivery</h4>
+                      <p class="card-text fs-6 p-2">
+                        Lorem ipsum dolor sit amet, consectetur adipi elit.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -319,8 +284,6 @@
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-=======
 
       <!-- banner cards -->
       <!-- <div class="container mt-5 position-absolute bottom-0 start-50 translate-middle-x">
@@ -329,11 +292,11 @@
     </section>
 
     <!-- CATEGORIES SECTION -->
-    <section>
+    <section class="my-5">
       <div class="container-fluid ps-4">
         <!-- categori text & angle brackets -->
         <div class="row d-flex justify-content-between">
-          <div class="col-md-2">
+          <div class="col-md-4">
             <h2>Categories</h2>
           </div>
           <div
@@ -348,19 +311,133 @@
               >
             </div>
             <div>
-              <a href="#" class="text-decoration-none text-dark">
-                <i class="bi bi-caret-left fs-4"></i>
-              </a>
-              <a href="#" class="text-decoration-none text-dark">
-                <i class="bi bi-caret-right fs-4"></i>
-              </a>
+              <a href="#" class="text-decoration-none text-dark swiper-prev1 disabled">
+            <i class="bi bi-caret-left fs-4"></i>
+          </a>
+          <a href="#" class="text-decoration-none text-dark swiper-next1">
+            <i class="bi bi-caret-right fs-4"></i>
+          </a>
             </div>
           </div>
         </div>
-
+      
         <!-- products card -->
-        <div class="row"></div>
-      </div>
+      <div class="swiper categorySwiper pt-4">
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-1.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Fruits &amp; Vagus</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-2.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Breads &amp; Sweets</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-3.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Fruits &amp; Veges</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-4.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Beverages</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-5.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Meats Products</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-6.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Fruits &amp; Veges</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-1.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Fruits &amp; Vagus</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-2.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Breads &amp; Sweets</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-3.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Fruits &amp; Veges</h4>
+              </a>
+          </div>
+
+          <div class="swiper-slide">
+              <a href="#" class="text-decoration-none text-dark text-center">
+                <img
+                src="images/category-thumb-6.jpg"
+                alt="Product image"
+                class="rounded-circle category_img"
+              />
+              <h4 class="mt-3">Fruits &amp; Veges</h4>
+              </a>
+          </div>
+
+          </div>
+        </div>
+        </div>
     </section>
 
     <!-- BEST SELLING PRODUCT SECTION -->
@@ -386,9 +463,8 @@
         </div>
 
         <!-- products card -->
-        <div class="row py-4">
-          
-          <div class="col-lg-3 col-md-4 col-sm-2">
+        <div class="row pt-4">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
             <div class="card card_hover p-2 mb-3">
               <img
                 src="images/product-thumb-1.png"
@@ -449,7 +525,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
             <div class="card card_hover p-2 mb-3">
               <img
                 src="images/product-thumb-2.png"
@@ -478,7 +554,7 @@
 
               <div class="card_bottom mb-3">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <input
                       type="number"
                       name=""
@@ -486,7 +562,7 @@
                       value="1"
                     />
                   </div>
-                  <div class="col-md-7 p-0 text-center">
+                  <div class="col-sm-7 p-0 text-center">
                     <div class="bg-success rounded py-2 view_btn_hover">
                       <a
                         href="#"
@@ -497,7 +573,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-2 mt-2">
+                  <div class="col-sm-2 mt-2">
                     <a
                       href="#"
                       class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
@@ -510,7 +586,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
             <div class="card card_hover p-2 mb-3">
               <img
                 src="images/product-thumb-3.png"
@@ -539,7 +615,7 @@
 
               <div class="card_bottom mb-3">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <input
                       type="number"
                       name=""
@@ -547,7 +623,7 @@
                       value="1"
                     />
                   </div>
-                  <div class="col-md-7 p-0 text-center">
+                  <div class="col-sm-7 p-0 text-center">
                     <div class="bg-success rounded py-2 view_btn_hover">
                       <a
                         href="#"
@@ -558,7 +634,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-2 mt-2">
+                  <div class="col-sm-2 mt-2">
                     <a
                       href="#"
                       class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
@@ -571,7 +647,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
             <div class="card card_hover p-2 mb-3">
               <img
                 src="images/product-thumb-4.png"
@@ -600,7 +676,7 @@
 
               <div class="card_bottom mb-3">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <input
                       type="number"
                       name=""
@@ -608,7 +684,7 @@
                       value="1"
                     />
                   </div>
-                  <div class="col-md-7 p-0 text-center">
+                  <div class="col-sm-7 p-0 text-center">
                     <div class="bg-success rounded py-2 view_btn_hover">
                       <a
                         href="#"
@@ -619,7 +695,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-2 mt-2">
+                  <div class="col-sm-2 mt-2">
                     <a
                       href="#"
                       class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
@@ -632,7 +708,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
             <div class="card card_hover p-2 mb-3">
               <img
                 src="images/product-thumb-5.png"
@@ -661,7 +737,7 @@
 
               <div class="card_bottom mb-3">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <input
                       type="number"
                       name=""
@@ -669,7 +745,7 @@
                       value="1"
                     />
                   </div>
-                  <div class="col-md-7 p-0 text-center">
+                  <div class="col-sm-7 p-0 text-center">
                     <div class="bg-success rounded py-2 view_btn_hover">
                       <a
                         href="#"
@@ -680,7 +756,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-2 mt-2">
+                  <div class="col-sm-2 mt-2">
                     <a
                       href="#"
                       class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
@@ -692,8 +768,10 @@
               </div>
             </div>
           </div>
+        <!-- </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-2">
+        <div class="row"> -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
             <div class="card card_hover p-2 mb-3">
               <img
                 src="images/product-thumb-6.png"
@@ -722,7 +800,7 @@
 
               <div class="card_bottom mb-3">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <input
                       type="number"
                       name=""
@@ -730,7 +808,7 @@
                       value="1"
                     />
                   </div>
-                  <div class="col-md-7 p-0 text-center">
+                  <div class="col-sm-7 p-0 text-center">
                     <div class="bg-success rounded py-2 view_btn_hover">
                       <a
                         href="#"
@@ -741,7 +819,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-2 mt-2">
+                  <div class="col-sm-2 mt-2">
                     <a
                       href="#"
                       class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
@@ -754,7 +832,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
             <div class="card card_hover p-2 mb-3">
               <img
                 src="images/product-thumb-7.png"
@@ -783,7 +861,7 @@
 
               <div class="card_bottom mb-3">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <input
                       type="number"
                       name=""
@@ -791,7 +869,7 @@
                       value="1"
                     />
                   </div>
-                  <div class="col-md-7 p-0 text-center">
+                  <div class="col-sm-7 p-0 text-center">
                     <div class="bg-success rounded py-2 view_btn_hover">
                       <a
                         href="#"
@@ -802,7 +880,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-2 mt-2">
+                  <div class="col-sm-2 mt-2">
                     <a
                       href="#"
                       class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
@@ -815,7 +893,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-sm-2">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
             <div class="card card_hover p-2 mb-3">
               <img
                 src="images/product-thumb-8.png"
@@ -844,7 +922,7 @@
 
               <div class="card_bottom mb-3">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-sm-3">
                     <input
                       type="number"
                       name=""
@@ -852,7 +930,7 @@
                       value="1"
                     />
                   </div>
-                  <div class="col-md-7 p-0 text-center">
+                  <div class="col-sm-7 p-0 text-center">
                     <div class="bg-success rounded py-2 view_btn_hover">
                       <a
                         href="#"
@@ -863,7 +941,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-2 mt-2">
+                  <div class="col-sm-2 mt-2">
                     <a
                       href="#"
                       class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
@@ -876,23 +954,950 @@
             </div>
           </div>
 
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3  text-center">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-9.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Organic 2% Reduced Fat Milk</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3  text-center">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-10.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Greek Style Plain Yogurt</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-7.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Imported Italian Spaghetti Pasta</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3 col-lg-3 flex-grow-1 text-center">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-3.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Sharp Cheddar Cheese Block</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+
+
+    </section>
+
+    <!-- OFFER & DISCOUNT SECTION -->
+     <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="mt-3 position-relative">
+              <img src="images/banner-ad-1.jpg" alt="" class="bnr_ad_img img-fluid">
+              <div class="position-absolute offer_text">
+                <p class="fs-3 fw-bold text-white">Items on SALE</p>
+              <p class="fs-5 text-white">Discounts up to 30%</p>
+              <a href="#" class="text-decoration-none text-white fs-5 ad_btn">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="mt-3">
+              <div class="position-relative">
+                <img src="images/banner-ad-2.jpg" alt="" class="bnr_ad_img-2">
+                <div class="position-absolute offer_text">
+                <p class="fs-4 fw-bold text-white">Combo Coupons</p>
+              <p class="fs-6 text-white">Discounts up to 30%</p>
+              <a href="#" class="text-decoration-none text-white fs-5 ad_btn">SHOP NOW</a>
+              </div>
+              </div>
+
+              <div class="position-relative">
+                <img src="images/banner-ad-3.jpg" alt="" class="bnr_ad_img-2 mt-3">
+                <div class="position-absolute offer_text">
+                <p class="fs-4 fw-bold text-white">Discount Coupons</p>
+              <p class="fs-6 text-white">Discounts up to 30%</p>
+              <a href="#" class="text-decoration-none text-white fs-5 ad_btn">SHOP NOW</a>
+              </div>
+              </div>
+            
+            </div>
+          </div>
         </div>
       </div>
-    </section>
->>>>>>> 89f8355 (best product card done)
+     </section>
 
-    </div>
-
-    <!-- banner cards -->
-    <!-- <div class="container mt-5 position-absolute bottom-0 start-50 translate-middle-x">
+    <!-- FEATURED PRODUCTS SECTION -->
+    <section class="my-5">
+      <div class="container-fluid ps-4">
+        <!-- categori text & angle brackets -->
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-4">
+            <h2>Featured products</h2>
+          </div>
+          <div
+            class="col-md-2 d-flex gap-3 align-items-center justify-content-end"
+          >
+            <div class="">
+              <a
+                href="#"
+                class="px-3 py-2 rounded-2 bg-success list-unstyled text-decoration-none text-light view_btn_hover"
+                type="submit"
+                >View All</a
+              >
+            </div>
+            <div>
+              <a href="#" class="text-decoration-none text-dark swiper-prev disabled">
+            <i class="bi bi-caret-left fs-4"></i>
+          </a>
+          <a href="#" class="text-decoration-none text-dark swiper-next">
+            <i class="bi bi-caret-right fs-4"></i>
+          </a>
+            </div>
+          </div>
+        </div>
       
-    </div> -->
-  </section>
+        <!-- products card -->
+      <div class="swiper productSwiper pt-4">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-1.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-</body>
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
 
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-2.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Whole Grain Oatmeal</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-3.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Sharp Cheddar Cheese Block</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-4.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Organic Baby Spinach</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-5.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Organic Spinach Leaves (Fresh Produce)</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-6.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Fresh Salmon</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-7.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Imported Italian Spaghetti Pasta</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-8.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Granny Smith Apples</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-9.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Organic 2% Reduced Fat Milk</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card card_hover p-2 mb-3">
+              <img
+                src="images/product-thumb-10.png"
+                alt="Product image"
+                class="card_product_img"
+              />
+              <div class="card-body text-center">
+                <p class="">Greek Style Plain Yogurt</p>
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-half text-warning"></i>
+                  (222)
+                </div>
+
+                <div
+                  class="d-flex text-center gap-2 justify-content-center pt-3"
+                >
+                  <p class="text-decoration-line-through">$24.00</p>
+                  <p class="fw-bold">$18</p>
+                  <p class="border border-1 p-1 text-muted d-inline">10% OFF</p>
+                </div>
+              </div>
+
+              <div class="card_bottom mb-3">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <input
+                      type="number"
+                      name=""
+                      class="form-control border-dark-subtle input-number quantity"
+                      value="1"
+                    />
+                  </div>
+                  <div class="col-sm-7 p-0 text-center">
+                    <div class="bg-success rounded py-2 view_btn_hover">
+                      <a
+                        href="#"
+                        class="rounded text-white text-decoration-none"
+                      >
+                        <i class="bi bi-cart3"></i>
+                        Add to cart
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 mt-2">
+                    <a
+                      href="#"
+                      class="text-dark border border-1 border-dark-subtle rounded fs-6 px-2 py-2 heart_hover"
+                    >
+                      <i class="bi bi-heart"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
