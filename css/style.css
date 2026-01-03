@@ -163,6 +163,33 @@
 
 } */
 
+.social_links li{
+  list-style: none;
+}
+
+.social_links .fa-brands{
+  padding: 12px 25px 12px 13px;
+  font-size: 14px;
+}
+
+.social_links li:hover {
+  border: none;
+  background-color: #EFEFEF;
+  border-radius: 7px;
+}
+
+.footer_links li {
+  list-style: none;
+}
+
+.footer_links li a {
+  text-decoration: none;
+  color: gray;
+  margin-left: -28px;
+  line-height: 30px;
+} 
+
+
 
 /*============== MEDIA QUERY  ===============*/
 
