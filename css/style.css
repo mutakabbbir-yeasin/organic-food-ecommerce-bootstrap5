@@ -55,7 +55,7 @@
     font-size: 45px;
   }
 
-  .count_text {
+.count_text {
     font-size: 20px;
   }
 
@@ -66,7 +66,6 @@
 .card_width {
   height: 100%;
 }
-
 
 .view_btn_hover {
   transition: .3s ease;
@@ -112,6 +111,11 @@
   visibility: visible;
 }
 
+.bnr_ad_img {
+  height: 500px;
+  width: 100%;
+}
+
 .offer_text {
   top: 25%;
   left: 5%;
@@ -128,6 +132,36 @@
   opacity: 0.4;
   pointer-events: none;
 }
+
+.swiper-prev-2.disabled,
+.swiper-next-2.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.swiper-prev-3.disabled,
+.swiper-next-3.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.newsletter {
+  background-image: url(../images/banner-newsletter.jpg);
+}
+
+.download_app {
+  background-color: #FFC107;
+  margin: 0 15px;
+  height: 450px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* .app_right_img {
+  height: 90%;
+  width: 80%;
+
+} */
 
 
 /*============== MEDIA QUERY  ===============*/
@@ -153,6 +187,13 @@
   .count_text {
     font-size: 18px;
   }
+
+  .card_product_img {
+  max-height: 180px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 20px;
+}
 }
 
 @media (min-width: 576px) and (max-width: 768px) {

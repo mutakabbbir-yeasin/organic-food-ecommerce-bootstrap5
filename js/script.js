@@ -34,14 +34,8 @@
 
 
 
-
-
-
-
-
-
   const productSwiper = new Swiper(".productSwiper", {
-    slidesPerView: 5,
+    slidesPerView: 4,
     spaceBetween: 20,
     slidesPerGroup: 1,
     loop: false,
@@ -55,7 +49,7 @@
       0: { slidesPerView: 1 },
       576: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
-      992: { slidesPerView: 5 },
+      992: { slidesPerView: 4 },
     },
 
     on: {
@@ -68,6 +62,75 @@
 
         prev.classList.toggle("disabled", this.isBeginning);
         next.classList.toggle("disabled", this.isEnd);
+      },
+    },
+     });
+
+
+
+    const popularSwiper = new Swiper(".popularSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    slidesPerGroup: 1,
+    loop: false,
+
+    navigation: {
+      nextEl: ".swiper-next-2",
+      prevEl: ".swiper-prev-2",
+    },
+
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 },
+    },
+
+    on: {
+      init() {
+        document.querySelector(".swiper-prev-2").classList.add("disabled");
+      },
+      slideChange() {
+        const prev2 = document.querySelector(".swiper-prev-2");
+        const next2 = document.querySelector(".swiper-next-2");
+
+        prev2.classList.toggle("disabled", this.isBeginning);
+        next2.classList.toggle("disabled", this.isEnd);
+      },
+    },
+  });
+
+
+
+
+  const arriveSwiper = new Swiper(".arriveSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    slidesPerGroup: 1,
+    loop: false,
+
+    navigation: {
+      nextEl: ".swiper-next-3",
+      prevEl: ".swiper-prev-3",
+    },
+
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 },
+    },
+
+    on: {
+      init() {
+        document.querySelector(".swiper-prev-3").classList.add("disabled");
+      },
+      slideChange() {
+        const prev3 = document.querySelector(".swiper-prev-3");
+        const next3 = document.querySelector(".swiper-next-3");
+
+        prev3.classList.toggle("disabled", this.isBeginning);
+        next3.classList.toggle("disabled", this.isEnd);
       },
     },
   });
