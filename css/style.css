@@ -121,6 +121,42 @@
   left: 5%;
 }
 
+.ad_btn {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+
+.ad_btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(169, 168, 168);
+  z-index: 1;
+}
+
+.ad_btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%; 
+  height: 3px;
+  background-color: white;
+  transition: width 0.4s ease-in-out; 
+  z-index: 2; 
+}
+
+.ad_btn:hover::after {
+  width: 100%;
+}
+
+
 .swiper-prev1.disabled,
 .swiper-next1.disabled {
   opacity: 0.4;
@@ -176,6 +212,10 @@
   border: none;
   background-color: #EFEFEF;
   border-radius: 7px;
+}
+
+.fa-brands:hover {
+  color: black !important;
 }
 
 .footer_links li {

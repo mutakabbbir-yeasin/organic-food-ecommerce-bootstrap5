@@ -32,8 +32,6 @@
     },
   });
 
-
-
   const productSwiper = new Swiper(".productSwiper", {
     slidesPerView: 4,
     spaceBetween: 20,
@@ -65,8 +63,6 @@
       },
     },
      });
-
-
 
     const popularSwiper = new Swiper(".popularSwiper", {
     slidesPerView: 4,
@@ -100,9 +96,6 @@
     },
   });
 
-
-
-
   const arriveSwiper = new Swiper(".arriveSwiper", {
     slidesPerView: 4,
     spaceBetween: 20,
@@ -134,3 +127,6 @@
       },
     },
   });
+
+
+
