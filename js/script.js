@@ -12,8 +12,8 @@
     },
 
     breakpoints: {
-      0: { slidesPerView: 2 },
-      576: { slidesPerView: 4 },
+      0: { slidesPerView: 3 },
+      576: { slidesPerView: 3 },
       768: { slidesPerView: 4 },
       992: { slidesPerView: 6 },
     },
@@ -44,10 +44,10 @@
     },
 
     breakpoints: {
-      0: { slidesPerView: 1 },
+      0: { slidesPerView: 2 },
       576: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
+      992: { slidesPerView: 5 },
     },
 
     on: {
@@ -76,10 +76,10 @@
     },
 
     breakpoints: {
-      0: { slidesPerView: 1 },
+      0: { slidesPerView: 2 },
       576: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
+      992: { slidesPerView: 5 },
     },
 
     on: {
@@ -108,10 +108,10 @@
     },
 
     breakpoints: {
-      0: { slidesPerView: 1 },
+      0: { slidesPerView: 2 },
       576: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
+      992: { slidesPerView: 5 },
     },
 
     on: {
@@ -124,6 +124,39 @@
 
         prev3.classList.toggle("disabled", this.isBeginning);
         next3.classList.toggle("disabled", this.isEnd);
+      },
+    },
+  });
+
+
+  const bestSellingSwiper = new Swiper(".bestSellingSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    slidesPerGroup: 1,
+    loop: false,
+
+    navigation: {
+      nextEl: ".swiper-next-4",
+      prevEl: ".swiper-prev-4",
+    },
+
+    breakpoints: {
+      0: { slidesPerView: 2 },
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 5 },
+    },
+
+    on: {
+      init() {
+        document.querySelector(".swiper-prev-4").classList.add("disabled");
+      },
+      slideChange() {
+        const prev4 = document.querySelector(".swiper-prev-4");
+        const next4 = document.querySelector(".swiper-next-4");
+
+        prev4.classList.toggle("disabled", this.isBeginning);
+        next4.classList.toggle("disabled", this.isEnd);
       },
     },
   });

@@ -76,8 +76,8 @@
 }
 
 .card_product_img {
-  max-height: 210px;
-  height: auto;
+  /* max-height: 210px; */
+  height: 210px;
   margin: 0 auto;
   padding-top: 20px;
 }
@@ -111,9 +111,18 @@
   visibility: visible;
 }
 
+/* .discount_offer {
+  max-height: 500px;
+  z-index: 111;
+} */
+
 .bnr_ad_img {
   height: 500px;
   width: 100%;
+}
+
+.bnr_ad_img-2 {
+  height: 242px;
 }
 
 .offer_text {
@@ -183,6 +192,10 @@
 
 .newsletter {
   background-image: url(../images/banner-newsletter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100%; */
+  /* overflow: hidden; */
 }
 
 .download_app {
@@ -238,10 +251,6 @@
     display: none;
   }
 
-  /* .search_input {
-    width: 90% !important;
-    margin: 0 auto;
-  } */
   .bnr_btn_strat,
   .bnr_btn_join {
     padding: 10px 20px;
@@ -268,6 +277,30 @@
   height: auto;
   margin: 0 auto;
   padding-top: 20px;
+}
+
+.card_bottom{
+  visibility: visible;
+}
+
+h2 {
+  font-size: 22px !important;
+  font-weight: bold;
+}
+
+.card_product_img {
+  height: 180px !important;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.category_img {
+  height: 120px;
+  width: 120px;
+}
+
+.swiper-slide h4 {
+  font-size: 15px !important;
 }
 }
 
@@ -302,10 +335,28 @@
   .count_text {
     font-size: 18px;
   }
+
+  .card_product_img {
+  /* max-height: 210px; */
+  height: 180px !important;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+  .card_bottom{
+  visibility: visible;
+}
 }
 
 
-@media (min-width: 768px) and (max-width: 1200px) {
+/* @media (min-width: 768px) and (max-width: 1200px) {
 
   
+} */
+
+@media (min-width: 992px) {
+  .col-lg-5-custom {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
 }
