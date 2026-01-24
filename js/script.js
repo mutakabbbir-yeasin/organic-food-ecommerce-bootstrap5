@@ -1,5 +1,20 @@
 
+// menu open, close
+const menuOpen = document.getElementById("menuOpen");
+  const menuClose = document.getElementById("menuClose");
+  const menu = document.querySelector(".menu_div_hidden");
 
+  menuOpen.addEventListener("click", function (e) {
+    e.preventDefault();
+    menu.classList.add("active");
+  });
+
+  menuClose.addEventListener("click", function (e) {
+    e.preventDefault();
+    menu.classList.remove("active");
+  });
+  
+  
   const categorySwiper = new Swiper(".categorySwiper", {
     slidesPerView: 6,
     spaceBetween: 20,
@@ -30,6 +45,26 @@
         next.classList.toggle("disabled", this.isEnd);
       },
     },
+  });
+
+  //animation
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section_animation");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          }
+        });
+      },
+      {
+        threshold: 0.2, // start animation when 20% visible
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
   });
 
   const productSwiper = new Swiper(".productSwiper", {

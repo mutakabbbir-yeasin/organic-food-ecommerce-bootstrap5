@@ -19,6 +19,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
+<!-- fontawesome cdn -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -42,8 +43,84 @@
                   class="d-inline-block align-text-top"
                 />
               </a>
-              <a href="#"><i class="bi bi-list ps-2 fs-2 text-dark"></i></a>
+              <a href="#" id="menuOpen"><i class="bi bi-list ps-2 fs-2 text-dark"></i></a>
             </div>
+            <!-- menu section hidden -->
+             <div class="menu_div_hidden">
+              <div class="d-flex justify-content-between px-4">
+                <p class="fs-4">MENU</p>
+                <a href="#" id="menuClose" class="text-dark text-decoration-none mt-1"><i class="fa-solid fa-x"></i></a>
+              </div>
+              <div class="px-4 mt-5">
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-apple-whole me-3"></i>Fruits and Vegetables</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-egg me-3"></i>Dairy and Eggs</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-drumstick-bite me-3"></i>Meat and Poultry</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-fish me-3"></i>Seafood</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-bread-slice me-3"></i>Bakery and Bread</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-bottle-droplet me-3"></i>Canned Goods</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-drumstick-bite me-3"></i>Frozen Foods</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-bowl-food me-3"></i>Pasta and Rice</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-bread-slice me-3"></i>Breakfast Foods</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-cookie me-3"></i>Snacks and Chips</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-beer-mug-empty me-3"></i>Beverage</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-mortar-pestle me-3"></i>Spices and Seasonings</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-baby me-3"></i>Baby Food and Formula</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-spa me-3"></i>Health and Welness</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-arrow-up-from-water-pump me-3"></i>Household Supplies</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-person-cane me-3"></i>Personal Care</a>
+                  <hr class="me-4">
+
+                  <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-cat me-3"></i>Pet Food and Supplies</a>
+                  <hr class="me-4">
+              </div>
+             </div>
           </div>
           <!-- search box -->
           <div class="col-md-4 col-10 mx-auto justify-content-sm-center">
@@ -293,7 +370,7 @@
     </section>
 
     <!-- CATEGORIES SECTION -->
-    <section class="my-5">
+    <section class="my-5 section_animation">
       <div class="container-fluid ps-4">
         <!-- categori text & angle brackets -->
         <div class="row d-flex justify-content-between">
@@ -440,7 +517,7 @@
     </section>
 
     <!-- BEST SELLING PRODUCT SECTION -->
-    <section class="pt-5">
+    <section class="pt-5 section_animation">
       <div class="container-fluid ps-4">
         <!-- heading text & angle brackets -->
         <div class="row d-flex justify-content-between">
@@ -1072,7 +1149,7 @@
     </section>
 
     <!-- OFFER & DISCOUNT SECTION -->
-     <section class="discount_offer">
+     <section class="discount_offer section_animation">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-7">
@@ -1112,7 +1189,7 @@
      </section>
 
     <!-- FEATURED PRODUCTS SECTION -->
-    <section class="my-5">
+    <section class="my-5 section_animation">
       <div class="container-fluid ps-4">
         <!-- categori text & angle brackets -->
         <div class="row d-flex justify-content-between">
@@ -1759,7 +1836,7 @@
     </section>
 
     <!-- DISCOUNT & NEWSLETTER -->
-     <section class="newsletter img-fluid py-5">
+     <section class="newsletter img-fluid py-5 section_animation">
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-light justify-content-center align-items-center pt-md-5 pt-sm-3">
@@ -1784,7 +1861,7 @@
      </section>
 
     <!-- POPULAR PRODUCTS SECTION -->
-    <section class="my-5">
+    <section class="my-5 section_animation">
       <div class="container-fluid ps-4">
         <!-- text & angle brackets -->
         <div class="row d-flex justify-content-between">
@@ -2431,7 +2508,7 @@
     </section>
 
     <!-- JUST ARRIVED SECTION -->
-    <section class="mt-5">
+    <section class="mt-5 section_animation">
       <div class="container-fluid ps-4">
         <!-- text & angle brackets -->
         <div class="row d-flex justify-content-between">
@@ -3078,7 +3155,7 @@
     </section>
 
     <!-- BLOG SECTION -->
-    <section class="pt-3">
+    <section class="pt-3 section_animation">
       <div class="container-fluid ps-4">
         <!-- heading text & angle brackets -->
         <div class="row d-flex justify-content-between">
@@ -3189,7 +3266,7 @@
     </section>
 
     <!-- DOWNLOAD APP SECTION -->
-    <section class="mt-5 download_app p-4">
+    <section class="mt-5 download_app p-4 section_animation">
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-4">
@@ -3212,7 +3289,7 @@
     </section>
 
     <!-- EXTRA INFO SECTION -->
-     <section class="my-5">
+     <section class="my-5 section_animation">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3 col-sm-6 mt-2">
@@ -3251,7 +3328,7 @@
      </section>
 
     <!-- FOOTER SECTION -->
-     <footer class="pt-5 mb-5">
+     <footer class="pt-5 mb-5 section_animation">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3 mt-3">
