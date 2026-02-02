@@ -219,127 +219,73 @@
       </div>
     </div>
 
-    <!-- BLOG SECTION -->
-    <section class="pt-3 section_animation">
-      <div class="container">
-        <!-- blog cards -->
-        <div class="row pt-4">
-          <div class="col-md-4 mt-3">
-            <div class="card p-3 blog_card shadow">
-              <a href="single_post.html">
-                <img
-                  src="images/post-thumbnail-1.jpg"
-                  class="w-100 img-fluid"
-                  alt="blog-img"
-                />
-              </a>
-              <div class="row mt-3 px-3">
-                <div class="col-md-6 col-sm-6 col-6">
-                  <div class="d-flex">
-                    <i class="bi bi-calendar-check text-muted me-2"></i>
-                    <p class="text-muted">22 Aug 2021</p>
-                  </div>
+    <!-- PRODUCT LIST AND CHECKOUT SUMMERY SECTION -->
+    <section class="container mt-5">
+      <div class="row">
+        <!-- Cart Product List Section -->
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <div class="card-header">
+              <h5>Product Lists</h5>
+            </div>
+            <div class="card-body">
+              <!-- Product -->
+              <div class="row align-items-center mb-3 cart-item">
+                <div class="col-md-3">
+                  <img src="images/category-thumb-1.jpg" class="cart-img img-fluid" />
                 </div>
-
-                <div class="col-md-6 col-sm-6 col-6">
-                  <div class="d-flex">
-                    <i class="fa-regular fa-folder text-muted mt-1 me-2"></i>
-                    <p class="text-muted">tips & tricks</p>
-                  </div>
+                <div class="col-md-4">
+                  <h6>Product Name</h6>
+                  <small class="text-muted">BDT - 500 Taka</small>
                 </div>
-              </div>
-              <div class="px-3">
-                <a href="single_post.html" class="text-decoration-none">
-                  <h4 class="text-dark">
-                    Top 10 casual look ideas to dress up your kids
-                  </h4>
-
-                  <p class="text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptas sed corrupti incidunt perferendis repellendus
-                    maiores, rerum fuga nobis dolorum...
-                  </p>
-                </a>
+                <div class="col-md-2">
+                  <input
+                    type="number"
+                    class="form-control quantity"
+                    value="1"
+                    min="1"
+                    data-price="50"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <strong class="item-total">$50.00</strong>
+                </div>
+                <div class="col-md-1">
+                  <button class="btn btn-danger btn-sm remove-item">×</button>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col-md-4 mt-3">
-            <div class="card p-3 blog_card shadow">
-              <a href="single_post.html">
-                <img
-                  src="images/post-thumbnail-2.jpg"
-                  class="w-100 img-fluid"
-                  alt="blog-img"
-                />
-              </a>
-              <div class="row mt-3 px-3">
-                <div class="col-md-6 col-sm-6 col-6">
-                  <div class="d-flex">
-                    <i class="bi bi-calendar-check text-muted me-2"></i>
-                    <p class="text-muted">22 Aug 2021</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-6">
-                  <div class="d-flex">
-                    <i class="fa-regular fa-folder text-muted mt-1 me-2"></i>
-                    <p class="text-muted">tips & tricks</p>
-                  </div>
-                </div>
-              </div>
-              <div class="px-3">
-                <a href="single_post.html" class="text-decoration-none">
-                  <h4 class="text-dark">
-                    Top 10 casual look ideas to dress up your kids
-                  </h4>
-
-                  <p class="text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptas sed corrupti incidunt perferendis repellendus
-                    maiores, rerum fuga nobis dolorum...
-                  </p>
-                </a>
-              </div>
-            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="summary-box mb-3">
+            <h5>Cart Summary</h5>
+            <hr />
+            <p>Subtotal: <span id="subtotal">BDT - 500 Taka</span></p>
+            <p>Discount: <span id="discount">BDT - 0 Taka</span></p>
+            <h6>Total: <span id="total">BDT - 500 Taka</span></h6>
+            <button class="btn btn-primary w-100 mt-3">Checkout</button>
           </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card p-3 shadow">
-              <a href="single_post.html">
-                <img
-                  src="images/post-thumbnail-3.jpg"
-                  class="w-100 img-fluid"
-                  alt=""
+          <!-- Coupon Section -->
+          <div class="summary-box">
+            <h6>Apply Coupon</h6>
+            <div class="row">
+              <div class="col-md-8">
+                <input
+                  type="text"
+                  id="coupon"
+                  class="form-control mb-2"
+                  placeholder="Enter coupon"
                 />
-              </a>
-              <div class="row mt-3 px-3">
-                <div class="col-md-6 col-sm-6 col-6">
-                  <div class="d-flex">
-                    <i class="bi bi-calendar-check me-2 text-muted"></i>
-                    <p class="text-muted">22 Aug 2021</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-6">
-                  <div class="d-flex">
-                    <i class="fa-regular fa-folder text-muted mt-1 me-2"></i>
-                    <p class="text-muted">Inspiration</p>
-                  </div>
-                </div>
               </div>
-              <div class="px-3">
-                <a href="single_post.html" class="text-decoration-none">
-                  <h4 class="text-dark">
-                    10 Different Types of comfortable clothes ideas for women
-                  </h4>
-
-                  <p class="text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptas sed corrupti incidunt perferendis repellendus
-                    maiores, rerum fuga nobis dolorum...
-                  </p>
-                </a>
+              <div class="col-md-4">
+                <button
+                  class="btn btn-outline-info text-dark w-100"
+                  onclick="applyCoupon()"
+                >
+                  Apply
+                </button>
               </div>
             </div>
           </div>
