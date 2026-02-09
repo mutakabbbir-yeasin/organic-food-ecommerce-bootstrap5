@@ -284,6 +284,15 @@ body{
   width: 100px;
 }
 
+.single_product_img {
+  width: 350px;
+  height: 350px;
+}
+
+.bar_color{
+  color: rgb(174, 170, 170);
+}
+
 
 
 /*============== MEDIA QUERY  ===============*/
