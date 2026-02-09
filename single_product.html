@@ -222,46 +222,129 @@
     <!-- PRODUCT-DETAILS SECTION  -->
     <section class="container mt-5">
         <div class="row">
-            <div class="col-md-4 col-12">
-                <div class="zoom overflow-hidden text-center mt-4">
-                    <img src="images/coffee.webp" alt="" class="img-fluid single_product_img ">
+          <!-- leftside product image and info -->
+          <div class="col-md-9 col-12">
+            <div class="row">
+              <!-- product image and info -->
+              <div class="col-md-5 col-12">
+                <div class="zoom overflow-hidden text-center  mt-4">
+                  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner text-center">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                          <img src="images/coffee.webp" class="single_product_img" alt="product's photo">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="images/coffee-1.webp" class="single_product_img" alt="product's photo">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/coffee-2.webp" class="single_product_img" alt="product's photo">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/coffee-3.webp" class="single_product_img" alt="product's photo">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                 </div>
+              </div>
+
+            <!-- product info -->
+              <div class="col-md-7 col-12 mt-4">
+                  <h5>Nestle Nescafe Classic Instant Coffee Jar</h5>
+                  <div class="">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <a class="text-decoration-none " href="#rating_section"><span class="ms-2">4.6 (950)</span></a> 
+                      <span class="bar_color ms-3">|</span> 
+                      <span class="ms-3">6.2k sold</span>
+                      <span class="bar_color ms-3">|</span> 
+                      <a class="text-dark" href="#"><i class="bi bi-share-fill ms-3"></i></a>
+                      <a class="text-dark" href="#"><i class="bi bi-heart-fill ms-3"></i></a>
+                  </div>
+
+                  <div class="col-12">
+                    <p class="mt-4"> <b>TK 530</b></p>
+                    <p><b>Brand : Nestle</b></p>
+                    <p><b>Quantity : 200 gm</b></p>
+                    <p> <b>SKU :SK-KID1VV</b></p>
+                    <p> <b>Category: Groceries</b></p>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-7 col-md-5 d-flex">
+                      <span class="">Quantity: </span>
+                    <input
+                      type="number"
+                      class="form-control border-dark-subtle ms-3"
+                      value="1"
+                    />
+                  </div>
+                  </div>
+                
+                  <div class="row">
+                      <div class="col-md-10 col-12 d-flex gap-2 mt-3">
+                          <div class="bg-success rounded py-2 text-center view_btn_hover w-100">
+                        <a href="#" class="rounded text-white text-decoration-none d-block">
+                          <i class="bi bi-cart"></i>
+                          <span>Add to cart</span>
+                        </a>
+                      </div>
+                      <div class="bg-success rounded py-2 text-center view_btn_hover w-100">
+                        <a href="#" class="rounded text-white text-decoration-none d-block">
+                          <i class="bi bi-cart"></i>
+                          <span>Buy Now</span>
+                        </a>
+                      </div>
+                      </div>
+                  </div>
+              </div>
             </div>
 
-            <div class="col-md-8 col-12 mt-4">
-                <h5>Nestle Nescafe Classic Instant Coffee Jar</h5>
-                <div class="">
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <a class="text-decoration-none " href="#rating_section"><span class="ms-2">4.6 (950)</span></a> 
-                    <span class="bar_color ms-3">|</span> 
-                    <span class="ms-3">6.2k sold</span>
-                    <span class="bar_color ms-3">|</span> 
-                    <a class="text-dark" href="#"><i class="bi bi-share-fill ms-3"></i></a>
-                    <a class="text-dark" href="#"><i class="bi bi-heart-fill ms-3"></i></a>
+            <!-- description -->
+            <div class="row">
+              <div class="col-md-12 col-12">
+                <div class="mt-5 p-3">
+                    <h2>Description</h2>
+                    <hr>
+                    <p>
+                        Start your day right with the first sip of NESCAFÉ Classic <br>
+                        NESCAFÉ Classic soluble coffee is perfect for any time of the day <br>
+                        Add a teaspoon (1.5g) of NESCAFÉ Classic and 5g Nestlé Coffeemate into 120ml hot (80°C) water. Add sugar as per your taste and stir up well to get a perfect cup of NESCAFÉ <br>
+                        Storage Instruction: Close lid tightly after use, always use a dry spoon, store in a cool, dry and hygienic place. <br>
+                        Variant: NESCAFÉ CLASSIC <br>
+                        Net Weight: 200g <br>
+                        Origin: India <br>
+                        Marketed by Nestlé Bangladesh Limited.
+                  </p>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-3">
-                        <input type="number" name="" id="" placeholder="Product Quantity" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <button type="button" class="btn btn-primary">Add to Cart</button>
-                        <button type="button" class="btn btn-primary">Buy Now</button>
-                    </div>
-                </div> -->
+                <div>
+                  
+                </div>
+              </div>
             </div>
+
+          </div>
+
+          <!-- right side delivery info -->
+          <div class="col-md-3 col-12">
+              <div class="singlePproduct_border_gray p-3 mt-4">
+                <p class="text-muted"><i class="bi bi-truck"></i> Home Delivery charge 50 TK</p>
+                <p class="text-muted"><i class="bi bi-clock"></i> Home Delivery time within 3 days</p>
+                <p class="text-muted"><i class="bi bi-cash-coin"></i> Cash on Delivery available</p>
+                <p class="text-muted"><i class="bi bi-check2-circle"></i> 100% Authentic</p>
+                <p class="text-muted"><i class="bi bi-check2-circle"></i> 7 days easy return</p>
+              </div>
+          </div>
+            
+
+            
         </div>
-        <h4 class="mt-4">Product details of G9 Pro+ Stereo Type-C Charging Long Standby Wireless Neckband Headphone With Microphone</h4>
-        <ul>
-            <li>Sound channel: Binaural Stereo</li>
-            <li>Chip: Jieli AC7026A low power consumption</li>
-            <li>Battery capacity: 500mAh</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-            <li>Lorem ipsum dolor sit amet consectetur.</li>
-        </ul>
 
     </section>
 

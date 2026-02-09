@@ -285,12 +285,16 @@ body{
 }
 
 .single_product_img {
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
 }
 
 .bar_color{
   color: rgb(174, 170, 170);
+}
+
+.singlePproduct_border_gray{
+  border: 1px solid rgb(171, 169, 169);
 }
 
 
