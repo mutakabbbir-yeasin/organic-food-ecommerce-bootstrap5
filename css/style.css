@@ -302,6 +302,14 @@ body{
   height: 120px;
 }
 
+.oops_text {
+  font-size: 40px;
+}
+
+.error_text {
+  font-size: 100px;
+}
+
 
 
 /*============== MEDIA QUERY  ===============*/
