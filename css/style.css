@@ -1,6 +1,6 @@
 body{
   position: relative;
-  background-color: #f5f4f4;
+  background-color: #f5f0f0;
 }
 
 .menu_div_hidden{
@@ -310,6 +310,11 @@ body{
   font-size: 100px;
 }
 
+.small_text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
 
 
 /*============== MEDIA QUERY  ===============*/
@@ -381,6 +386,10 @@ h2 {
 
 .cart_product_title {
   font-size: 13px;
+}
+
+.delivery_phn_width {
+  width: 80% !important;
 }
 }
 
