@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Organic Food</title>
+    <link rel="icon" href="images/fav-icon.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR SECTION  -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <!-- logo & hambarger icon -->
+          <div class="col-md-3 col-12">
+            <div
+              class="d-flex align-items-center justify-content-center logo_position"
+            >
+              <a class="navbar-brand" href="#">
+                <img
+                  src="images/logo.svg"
+                  alt="Logo"
+                  width="160"
+                  height="80"
+                  class="d-inline-block align-text-top"
+                />
+              </a>
+              <a href="#" id="menuOpen"
+                ><i class="bi bi-list ps-2 fs-2 text-dark"></i
+              ></a>
+            </div>
+            <!-- menu section hidden -->
+            <div class="menu_div_hidden">
+              <div class="d-flex justify-content-between px-3">
+                <p class="fs-4">MENU</p>
+                <a
+                  href="#"
+                  id="menuClose"
+                  class="text-dark text-decoration-none mt-1"
+                  ><i class="fa-solid fa-x"></i
+                ></a>
+              </div>
+              <div class="px-4 mt-3">
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-apple-whole me-3"></i>Fruits and
+                  Vegetables</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-egg me-3"></i>Dairy and Eggs</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-drumstick-bite me-3"></i>Meat and
+                  Poultry</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-fish me-3"></i>Seafood</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-bread-slice me-3"></i>Bakery and
+                  Bread</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-bottle-droplet me-3"></i>Canned Goods</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-drumstick-bite me-3"></i>Frozen Foods</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-bowl-food me-3"></i>Pasta and Rice</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-bread-slice me-3"></i>Breakfast Foods</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-cookie me-3"></i>Snacks and Chips</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-beer-mug-empty me-3"></i>Beverage</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-mortar-pestle me-3"></i>Spices and
+                  Seasonings</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-baby me-3"></i>Baby Food and Formula</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-spa me-3"></i>Health and Welness</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-arrow-up-from-water-pump me-3"></i
+                  >Household Supplies</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-person-cane me-3"></i>Personal Care</a
+                >
+                <hr class="me-4" />
+
+                <a href="#" class="text-dark text-decoration-none">
+                  <i class="fa-solid fa-cat me-3"></i>Pet Food and Supplies</a
+                >
+                <hr class="me-4" />
+              </div>
+            </div>
+          </div>
+          <!-- search box -->
+          <div class="col-md-4 col-10 mx-auto justify-content-sm-center">
+            <div class="position-relative search_box">
+              <form
+                class="d-flex form-control search_form"
+                role="search bg-light"
+              >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown category_hidden">
+                    <a
+                      class="nav-link dropdown-toggle text-dark"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      All Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Groceries</a></li>
+                      <li><a class="dropdown-item" href="#">Drinks</a></li>
+                      <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <input
+                  class="form-control me-2 border-0 bg-transparent search_input"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <a href="#"
+                  ><i
+                    class="bi bi-search fs-4 position-absolute top-2 end-0 me-3 text-dark"
+                  ></i
+                ></a>
+              </form>
+            </div>
+          </div>
+
+          <!-- pages -->
+          <div class="col-md-3 col-12">
+            <div class="my-4">
+              <ul
+                class="mx-auto mb-2 mb-lg-0 ms-lg-5 d-flex justify-content-center"
+              >
+                <li class="nav-item d-inline me-4">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="index.html"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item dropdown d-inline">
+                  <a
+                    class="nav-link dropdown-toggle fw-bold text-dark"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="about_us.html">ABOUT US</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="single_product.html"
+                        >SINGLE PRODUCT</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="cart.html">CART</a></li>
+                    <li>
+                      <a class="dropdown-item" href="checkout.html">CHECKOUT</a>
+                    </li>
+                    <li><a class="dropdown-item" href="blog.html">BLOG</a></li>
+                    <li>
+                      <a class="dropdown-item" href="single_post.html"
+                        >SINGLE BLOG</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="contact.html">CONTACT</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="my_account.html"
+                        >MY ACCOUNT</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="error_page.html"
+                        >404 PAGE</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- icons -->
+          <div class="col-md-2 col-12 pb-4">
+            <div
+              class="d-flex justify-content-center justify-content-sm-center"
+            >
+              <a href="#"><i class="bi bi-person fs-4 me-4 text-dark"></i></a>
+              <a href="#"
+                ><i class="bi bi-bookmark-check fs-4 me-4 text-dark"></i
+              ></a>
+              <a href="#"><i class="bi bi-basket fs-4 text-dark"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- PRODUCT LIST AND CHECKOUT SUMMERY SECTION -->
+    <section class="container mt-5">
+      <div class="row">
+        <!-- Cart Product List Section -->
+        <div class="col-md-8 col-12">
+          <h4>Add new shipping Address</h4>
+          <form action="" method="get" class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row mt-4">
+                  <!-- full name -->
+                  <div class="col-12 mb-3">
+                    <label for="validationServer01" class="form-label"
+                      >Full Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control border-info"
+                      id="validationServer01"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Enter a valid name</div>
+                  </div>
+
+                  <!-- phone number -->
+                  <div class="col-12 mb-3">
+                    <label for="exampleFormControlInput2" class="form-label"
+                      >Phone Number:</label
+                    >
+                    <input
+                      pattern="[0-9]{11,}"
+                      inputmode="numeric"
+                      class="form-control border-info"
+                      id="exampleFormControlInput2"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Enter a valid phone number
+                    </div>
+                  </div>
+
+                  <!-- Building / House No / Floor / Street -->
+                  <div class="col-12 mb-3">
+                    <label for="validationServer01" class="form-label"
+                      >Building / House No / Floor / Street:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control border-info"
+                      id="validationServer01"
+                      placeholder="Please enter"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Enter a valid address</div>
+                  </div>
+
+                  <!-- Colony / Suburb / Locality / Landmark -->
+                  <div class="col-12 mb-3">
+                    <label for="validationServer01" class="form-label"
+                      >Colony / Suburb / Locality / Landmark:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control border-info"
+                      id="validationServer01"
+                      placeholder="Please enter"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Enter a valid address</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="row mt-4">
+                  <!-- region -->
+                  <div class="col-12 mb-3">
+                    <label class="form-label">Region:</label>
+
+                    <div class="dropdown">
+                      <input
+                        type="text"
+                        class="form-control border-info pe-3 dropdown-toggle"
+                        placeholder="Select Region"
+                        data-bs-toggle="dropdown"
+                        readonly
+                      />
+
+                      <!-- Up & Down arrows -->
+                      <div
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+                      >
+                        <div class="d-flex flex-column lh-1">
+                          <i class="bi bi-caret-up-fill"></i>
+                          <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                      </div>
+
+                      <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#">Dhaka</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Chattogram</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Rajshahi</a></li>
+                        <li><a class="dropdown-item" href="#">Khulna</a></li>
+                        <li><a class="dropdown-item" href="#">Sylhet</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- city -->
+                  <div class="col-12 mb-3">
+                    <label class="form-label">City:</label>
+
+                    <div class="dropdown">
+                      <input
+                        type="text"
+                        class="form-control border-info pe-3 dropdown-toggle"
+                        placeholder="Select city"
+                        data-bs-toggle="dropdown"
+                        readonly
+                      />
+
+                      <!-- Up & Down arrows -->
+                      <div
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+                      >
+                        <div class="d-flex flex-column lh-1">
+                          <i class="bi bi-caret-up-fill"></i>
+                          <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                      </div>
+
+                      <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#">Dhaka</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Chattogram</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Rajshahi</a></li>
+                        <li><a class="dropdown-item" href="#">Khulna</a></li>
+                        <li><a class="dropdown-item" href="#">Sylhet</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- area -->
+                  <div class="col-12 mb-3">
+                    <label class="form-label">Area:</label>
+
+                    <div class="dropdown">
+                      <input
+                        type="text"
+                        class="form-control border-info pe-3 dropdown-toggle"
+                        placeholder="Select area"
+                        data-bs-toggle="dropdown"
+                        readonly
+                      />
+
+                      <!-- Up & Down arrows -->
+                      <div
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+                      >
+                        <div class="d-flex flex-column lh-1">
+                          <i class="bi bi-caret-up-fill"></i>
+                          <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                      </div>
+
+                      <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#">Dhaka</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Chattogram</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Rajshahi</a></li>
+                        <li><a class="dropdown-item" href="#">Khulna</a></li>
+                        <li><a class="dropdown-item" href="#">Sylhet</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- address -->
+                  <div class="col-12 mb-3">
+                    <label for="validationServer01" class="form-label"
+                      >Address:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control border-info"
+                      id="validationServer01"
+                      placeholder="For example: House# 12, Street# 5/A, ABC Road"
+                      required
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Enter a valid address</div>
+                  </div>
+
+                  <!-- select delivery label -->
+                  <div class="mt-4">
+                    <p class="text-end">Select a label for effective delivery:</p>
+                      <div class="d-flex justify-content-end gap-3">
+                        <button class="btn btn-outline-info px-4 py-2 text-dark">
+                          <i class="bi bi-house"></i>
+                          Home
+                        </button>
+                        <button class="btn btn-outline-info px-4 py-2 text-dark">
+                          <i class="bi bi-building"></i>
+                          Office
+                        </button>
+                      </div>
+                  </div>
+
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-5 d-flex justify-content-end gap-3">
+              <button class="btn btn-outline-primary px-4 py-2" type="submit">Cencel</button>
+              <button class="btn btn-primary px-5 py-2" type="submit">Save</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Order summery -->
+        <div class="col-md-4">
+          <div class="bg-light p-4">
+            <div class="summary-box mb-3">
+              <h5>Order Summary</h5>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <p class="text-muted fw-bold">Subtotal (2 items)</p>
+                <p class="fw-bold" id="subtotal">1000 Taka</p>
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <p class="text-muted fw-bold">Delivery Fee</p>
+                <p class="fw-bold" id="subtotal">140 Taka</p>
+              </div>
+              <hr />
+
+              <div class="d-flex justify-content-between">
+                <p class="text-muted fw-bold">Total:</p>
+                <p class="fw-bold" id="subtotal">1140 Taka</p>
+              </div>
+
+              <a
+                href="checkout_after_saving_customer_details.html"
+                class="btn btn-primary w-100 mt-3 disabled"
+                type="submit"
+                >Proceed to Checkout</a>
+
+              <!-- <button class="btn btn-primary w-100 mt-3">Proceed to Checkout</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="pt-5 mb-5 section_animation">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 mt-3">
+            <div class="d-flex justify-content-center">
+              <img src="images/logo.svg" class="w-75" alt="logo" />
+            </div>
+            <div class="mt-3">
+              <ul class="social_links d-flex gap-2 justify-content-center">
+                <li>
+                  <i
+                    class="fa-brands fa-facebook-f border border-1 rounded text-muted"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-twitter border border-1 rounded text-muted"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-youtube border border-1 rounded text-muted"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-instagram border border-1 rounded text-muted"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-amazon border border-1 rounded text-muted"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6 mt-3 text-center">
+            <h4>Organic</h4>
+            <ul class="footer_links">
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Conditions</a>
+              </li>
+              <li>
+                <a href="#">Our Journals</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Affiliate Programme</a>
+              </li>
+              <li>
+                <a href="#">Ultras Press</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6 mt-3 text-center">
+            <h4>Quick Links</h4>
+            <ul class="footer_links">
+              <li>
+                <a href="#">Offers</a>
+              </li>
+              <li>
+                <a href="#">Discount Coupons</a>
+              </li>
+              <li>
+                <a href="#">Stores</a>
+              </li>
+              <li>
+                <a href="#">Track Order</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <li>
+                <a href="#">Info</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6 mt-3 text-center">
+            <h4>Customer Service</h4>
+            <ul class="footer_links">
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">Returns & Refunds</a>
+              </li>
+              <li>
+                <a href="#">Cookie Guidelines</a>
+              </li>
+              <li>
+                <a href="#">Delivery Information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-6 mt-3 text-center">
+            <h4>Subscribe Us</h4>
+            <p class="text-muted p-2">
+              Subscribe to our newsletter to get updates about our grand offers.
+            </p>
+            <div class="d-flex p-2">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                class="w-75 border-0 rounded-start ps-2 bg-success-subtle py-1"
+              />
+              <input
+                type="submit"
+                value="Subscribe"
+                class="w-25 bg-dark text-white border-0 ps-2 py-1 rounded-end"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
